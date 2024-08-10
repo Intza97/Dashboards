@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+  <!--==================== METADATOS ====================-->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="description" content="Dashboards">
+      <meta name="keywords" content="HTML-CSS-JS">
+      <meta name="author" content="Rocio Cuello">
+      
+      <!--==================== CSS ====================-->
+      <link rel="stylesheet" href="assets/css/style.css">
+
+      <!--==================== TITULO ====================-->
+      <title>Dashboards | Dashboard Sidebar</title>
+
+      <!--==================== ICONO DE PESTAÑA ====================-->
+      <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
+
+    </head>
+
+  <body>
+    <div class="menuToggle"></div>
+  <div class="sidebar">
+    <ul>
+      <li class="logo" style="--bg:#333;">
+        <a href="#">
+          <div class="icon"><img src="assets/img/logo.png" width="40px"></div>
+          <div class="text">Intza</div>
+        </a>
+      </li>
+      <div class="Menulist">
+        <li style="--bg:#f44336;" class="active">
+          <a href="#">
+            <div class="icon"><ion-icon name="home-outline"></ion-icon></div>
+            <div class="text">Inicio</div>
+          </a>
+        </li>
+        <li style="--bg:#ffa117;">
+          <a href="#">
+            <div class="icon"><ion-icon name="person-outline"></ion-icon></div>
+            <div class="text">Perfil</div>
+          </a>
+        </li>
+        <li style="--bg:#0FC70F;">
+          <a href="#">
+            <div class="icon"><ion-icon name="chatbubble-outline"></ion-icon></div>
+            <div class="text">Buzón de entrada</div>
+          </a>
+        </li>
+        <li style="--bg:#2196F3;">
+          <a href="#">
+            <div class="icon"><ion-icon name="bar-chart-outline"></ion-icon></div>
+            <div class="text">Análitica</div>
+          </a>
+        </li>
+        <li style="--bg:#B145E9;">
+          <a href="#">
+            <div class="icon"><ion-icon name="cart-outline"></ion-icon></div>
+            <div class="text">Orden</div>
+          </a>
+        </li>
+        <li style="--bg:#E91E63;">
+          <a href="#">
+            <div class="icon"><ion-icon name="settings-outline"></ion-icon></div>
+            <div class="text">Ajuste</div>
+          </a>
+        </li>
+      </div>
+      <div class="bottom">
+        <li style="--bg:#333;">
+          <a href="#">
+            <div class="icon">
+              <div class="imgBx">
+                <img src="assets/img/foto.jpg" alt="">
+              </div> 
+            </div>
+            <div class="text">Ethan Coen</div>
+          </a>
+        </li>
+        <li style="--bg:#333;">
+          <a href="#">
+            <div class="icon"><ion-icon name="log-out-outline"></ion-icon></div>
+            <div class="text">Cerrar Sesión</div>
+          </a>
+        </li>
+      </div>
+    </ul>
+  </div>
+       <!--==================== script ====================-->
+    <script>
+      let menuToggle=document.querySelector('.menuToggle');
+      let sidebar=document.querySelector('.sidebar');
+      menuToggle.onclick=function(){
+        menuToggle.classList.toggle('active');
+        sidebar.classList.toggle('active');
+      }
+      let MenuList = document.querySelectorAll('.Menulist li');
+    function activeLink() {
+      MenuList.forEach((item) =>
+       item.classList.remove('active'));
+      this.classList.add('active')
+    }
+    MenuList.forEach((item) => 
+    item.addEventListener('click', activeLink));
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

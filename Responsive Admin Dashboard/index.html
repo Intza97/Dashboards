@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+  <!--==================== METADATOS ====================-->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="description" content="Dashboards">
+      <meta name="keywords" content="HTML-CSS-JS">
+      <meta name="author" content="Rocio Cuello">
+      
+      <!--==================== CSS ====================-->
+      <link rel="stylesheet" href="assets/css/style.css">
+
+      <!--==================== TITULO ====================-->
+      <title>Dashboards | Responsive Admin Dashboard</title>
+
+      <!--==================== ICONO DE PESTAÑA ====================-->
+      <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
+
+    </head>
+
+  <body>
+    <div class="container">
+    <div class="navigation">
+      <ul>
+        <li class="active">
+          <a href="#">
+            <span class="icon"><ion-icon name="laptop-outline"></ion-icon></span>
+            <span class="title">Intza</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><ion-icon name="grid-outline"></ion-icon></span>
+            <span class="title">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+            <span class="title">Clientes</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+            <span class="title">Mensajes</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+            <span class="title">Ajustes</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><ion-icon name="help-outline"></ion-icon></span>
+            <span class="title">Ayuda</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+            <span class="title">Contraseña</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+            <span class="title">Cerrar Sesión</span>
+          </a>
+        </li>
+      </ul>
+    </div>  
+    <div class="main">
+      <div class="topbar">
+        <div class="toggle">
+          <ion-icon name="menu-outline" class="open"></ion-icon>
+        </div>
+        <div class="search">
+          <label for="">
+            <input type="text" name="" id="" placeholder="Search">
+            <ion-icon name="search-outline"></ion-icon>
+          </label>
+        </div>
+        <div class="user">
+          <img src="assets/img/user.jpg" alt="">
+        </div>
+      </div>
+      <div class="cardBox">
+        <div class="card">
+          <div>
+            <div class="numbers">1,504</div>
+            <div class="cardName">Daily Views</div>
+          </div>
+          <div class="iconBx">
+            <ion-icon name="eye-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <div class="numbers">80</div>
+            <div class="cardName">Ventas</div>
+          </div>
+          <div class="iconBx">
+            <ion-icon name="cart-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <div class="numbers">284</div>
+            <div class="cardName">Comentarios</div>
+          </div>
+          <div class="iconBx">
+            <ion-icon name="chatbubbles-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <div class="numbers">$7,842</div>
+            <div class="cardName">Ganancias</div>
+          </div>
+          <div class="iconBx">
+            <ion-icon name="cash-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+
+      <div class="graphBox">
+        <div class="box">
+          <canvas id="myChart"></canvas>
+        </div>
+        <div class="box">
+          <canvas id="earning"></canvas>
+        </div>
+      </div>
+
+      <div class="details">
+        <div class="recentOrders">
+          <div class="cardHeader">
+            <h2>Ordenes Recientes</h2>
+            <a href="#" class="btn">Ver todo</a>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <td>Nombre</td>
+                <td>Precio</td>
+                <td>Pago</td>
+                <td>Estado</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Refrigerador Star</td>
+                <td>$1200</td>
+                <td>Pagado</td>
+                <td><span class="status delivered">Entregado</span></td>
+              </tr>
+              <tr>
+                <td>Enfriadores de Ventana</td>
+                <td>$110</td>
+                <td>Debe</td>
+                <td><span class="status pending">Pendiente</span></td>
+              </tr>
+              <tr>
+                <td>Altavoces</td>
+                <td>$620</td>
+                <td>Pagado</td>
+                <td><span class="status return">Devolución</span></td>
+              </tr>
+              <tr>
+                <td>Portátil Hp</td>
+                <td>$110</td>
+                <td>Debe</td>
+                <td><span class="status progress">En Progreso</span></td>
+              </tr>
+              <tr>
+                <td>Apple Watch</td>
+                <td>$1200</td>
+                <td>Pagado</td>
+                <td><span class="status delivered">Entregado</span></td>
+              </tr>
+              <tr>
+                <td>Ventilador de Pared</td>
+                <td>$110</td>
+                <td>Pagado</td>
+                <td><span class="status pending">Pendiente</span></td>
+              </tr>
+              <tr>
+                <td>Zapatos Adidas</td>
+                <td>$620</td>
+                <td>Pagado</td>
+                <td><span class="status return">Devolución</span></td>
+              </tr>
+              <tr>
+                <td>Camisetas de Mezclilla</td>
+                <td>$110</td>
+                <td>Debe</td>
+                <td><span class="status progress">En Progreso</span></td>
+              </tr>
+              <tr>
+                <td>Zapatos Casual</td>
+                <td>$575</td>
+                <td>Pagado</td>
+                <td><span class="status pending">Pendiente</span></td>
+              </tr>
+              <tr>
+                <td>Ventilador de Pared</td>
+                <td>$110</td>
+                <td>Pagado</td>
+                <td><span class="status pending">Pendiente</span></td>
+              </tr>
+              <tr>
+                <td>Camisetas de Mezclilla</td>
+                <td>$110</td>
+                <td>Debe</td>
+                <td><span class="status progress">En Progreso</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="recentCustomers">
+          <div class="cardHeader">
+            <h2>Clientes Recientes</h2>
+          </div>
+          <table>
+            <tr>
+              <td width="60px"><div class="imgBx"><img src="assets/img/img1.jpg" alt=""></div></td>
+              <td><h4>David <br><span>Italia</span></h4></td>
+            </tr>
+            <tr>
+              <td width="60px"><div class="imgBx"><img src="assets/img/img2.jpg" alt=""></div></td>
+              <td><h4>Muhammad <br><span>India</span></h4></td>
+            </tr>
+            <tr>
+              <td width="60px"><div class="imgBx"><img src="assets/img/img3.jpg" alt=""></div></td>
+              <td><h4>Amelia <br><span>Francia</span></h4></td>
+            </tr>
+            <tr>
+              <td width="60px"><div class="imgBx"><img src="assets/img/img4.jpg" alt=""></div></td>
+              <td><h4>Olivia <br><span>USA</span></h4></td>
+            </tr>
+            <tr>
+              <td width="60px"><div class="imgBx"><img src="assets/img/img5.jpg" alt=""></div></td>
+              <td><h4>Amit <br><span>Japón</span></h4></td>
+            </tr>
+            <tr>
+              <td width="60px"><div class="imgBx"><img src="assets/img/img6.jpg" alt=""></div></td>
+              <td><h4>Ashraf <br><span>India</span></h4></td>
+            </tr>
+            <tr>
+              <td width="60px"><div class="imgBx"><img src="assets/img/img7.jpg" alt=""></div></td>
+              <td><h4>Diana <br><span>Malasia</span></h4></td>
+            </tr>
+            <tr>
+              <td width="60px"><div class="imgBx"><img src="assets/img/img8.jpg" alt=""></div></td>
+              <td><h4>Amit <br><span>India</span></h4></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+   
+    <!--==================== script ====================-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+   <script src="assets/js/chart.js"></script>
+   <script>
+      let toggle=document.querySelector('.toggle');
+      let navigation=document.querySelector('.navigation');
+      let main=document.querySelector('.main');
+
+      toggle.onclick=function(){
+        navigation.classList.toggle('active');
+        main.classList.toggle('active');
+      }
+     let  list=document.querySelectorAll('.navigation li');
+     function activeLink(){
+        list.forEach((item)=>
+          item.classList.remove('hovered'));
+          this.classList.add('hovered');
+      }
+      list.forEach((item)=>
+    item.addEventListener('mouseover',activeLink))
+      </script>
+      
+   </body>
+</html>
