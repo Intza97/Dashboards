@@ -1,133 +1,131 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
+<html lang="es">
+<head>
   <!--==================== METADATOS ====================-->
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <meta name="description" content="Dashboards">
-      <meta name="keywords" content="HTML-CSS-JS">
-      <meta name="author" content="Rocio Cuello">
-      
-      <!--==================== CSS ====================-->
-      <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Dashboards">
+  <meta name="keywords" content="HTML-CSS-JS">
+  <meta name="author" content="Rocio Cuello">
 
-      <!--==================== TITULO ====================-->
-      <title>Dashboards | Responsive Side Navigation Bar</title>
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="assets/css/style.css">
 
-      <!--==================== ICONO DE PESTAÑA ====================-->
-      <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
+  <!--==================== TITULO ====================-->
+  <title>Dashboards | Responsive Side Navigation Bar</title>
 
-      <!--==================== ICONOS ====================-->
-      <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    </head>
+  <!--==================== ICONO DE PESTAÑA ====================-->
+  <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
 
-  <body>
-    <div class="sidebar">
-      <div class="logo-details">
-        <i class='bx bx-laptop icon'></i>
-          <div class="logo_name">Intza</div>
-          <i class='bx bx-menu' id="btn" ></i>
-      </div>
-      <ul class="nav-list">
-        <li>
-            <i class='bx bx-search' ></i>
-           <input type="text" placeholder="Search...">
-           <span class="tooltip">Search</span>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-grid-alt'></i>
-            <span class="links_name">Dashboard</span>
-          </a>
-           <span class="tooltip">Dashboard</span>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-user'></i>
-            <span class="links_name">Usuario</span>
-          </a>
-          <span class="tooltip">Usuario</span>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-chat'></i>
-            <span class="links_name">Mensajes</span>
-          </a>
-          <span class="tooltip">Mensajes</span>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-pie-chart-alt-2'></i>
-            <span class="links_name">Analíticas</span>
-          </a>
-          <span class="tooltip">Analíticas</span>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-folder'></i>
-            <span class="links_name">Gestor de Archivos</span>
-          </a>
-          <span class="tooltip">Archivos</span>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-cart-alt'></i>
-            <span class="links_name">Pedidos</span>
-          </a>
-          <span class="tooltip">Pedidos</span>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-heart'></i>
-            <span class="links_name">Guardados</span>
-          </a>
-          <span class="tooltip">Guardados</span>
-        </li>
-        <li>
-          <a href="#">
-            <i class='bx bx-cog'></i>
-            <span class="links_name">Configuración</span>
-          </a>
-          <span class="tooltip">Configuración</span>
-        </li>
-        <li class="profile">
-          <div class="profile-details">
-            <img src="assets/img/chico.jpg" alt="Imagen de perfil">
-            <div class="name_job">
-              <div class="name">Prem Shahi</div>
-              <div class="job">Diseñador web</div>
-            </div>
-          </div>
-          <i class='bx bx-log-out' id="log_out"></i>
-        </li>
-      </ul>
+  <!--==================== ICONOS ====================-->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bx-laptop icon'></i>
+        <div class="logo_name">Intza</div>
+        <i class='bx bx-menu' id="btn" ></i>
     </div>
-    <section class="home-section">
-        <div class="text">Dashboard</div>
-    </section>
-    
-      <!--==================== script ====================-->
-    <script>
-    let sidebar = document.querySelector(".sidebar");
-    let closeBtn = document.querySelector("#btn");
-    let searchBtn = document.querySelector(".bx-search");
-    closeBtn.addEventListener("click", ()=>{
-      sidebar.classList.toggle("open");
-      menuBtnChange();
-    });
-    searchBtn.addEventListener("click", ()=>{ 
-      sidebar.classList.toggle("open");
-      menuBtnChange(); 
-    });
- 
-    function menuBtnChange() {
-     if(sidebar.classList.contains("open")){
-       closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
-     }else {
-       closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
-     }
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+          <input type="text" placeholder="Search...">
+          <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+          <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-user'></i>
+          <span class="links_name">Usuario</span>
+        </a>
+        <span class="tooltip">Usuario</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-chat'></i>
+          <span class="links_name">Mensajes</span>
+        </a>
+        <span class="tooltip">Mensajes</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-pie-chart-alt-2'></i>
+          <span class="links_name">Analíticas</span>
+        </a>
+        <span class="tooltip">Analíticas</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-folder'></i>
+          <span class="links_name">Gestor de Archivos</span>
+        </a>
+        <span class="tooltip">Archivos</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cart-alt'></i>
+          <span class="links_name">Pedidos</span>
+        </a>
+        <span class="tooltip">Pedidos</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-heart'></i>
+          <span class="links_name">Guardados</span>
+        </a>
+        <span class="tooltip">Guardados</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cog'></i>
+          <span class="links_name">Configuración</span>
+        </a>
+        <span class="tooltip">Configuración</span>
+      </li>
+      <li class="profile">
+        <div class="profile-details">
+          <img src="assets/img/chico.jpg" alt="Imagen de perfil">
+          <div class="name_job">
+            <div class="name">Prem Shahi</div>
+            <div class="job">Diseñador web</div>
+          </div>
+        </div>
+        <i class='bx bx-log-out' id="log_out"></i>
+      </li>
+    </ul>
+  </div>
+  <section class="home-section">
+      <div class="text">Dashboard</div>
+  </section>
+  <!--==================== SCRIPT ====================-->
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();
+  });
+  searchBtn.addEventListener("click", ()=>{ 
+    sidebar.classList.toggle("open");
+    menuBtnChange(); 
+  });
+
+  function menuBtnChange() {
+    if(sidebar.classList.contains("open")){
+      closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+    }else {
+      closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
     }
-    </script>
-  </body>
-  </html>
+  }
+  </script>
+</body>
+</html>

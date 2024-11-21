@@ -1,125 +1,124 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
+<html lang="es">
+<head>
   <!--==================== METADATOS ====================-->
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <meta name="description" content="Checkboxes">
-      <meta name="keywords" content="HTML-CSS-JS">
-      <meta name="author" content="Rocio Cuello">
-      
-      <!--==================== CSS ====================-->
-      <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Checkboxes">
+  <meta name="keywords" content="HTML-CSS-JS">
+  <meta name="author" content="Rocio Cuello">
 
-      <!--==================== TITULO ====================-->
-      <title>Dashboards | Hoverable Sidebar Menu</title>
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="assets/css/style.css">
 
-      <!--==================== ICONO DE PESTAÑA ====================-->
-      <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
+  <!--==================== TITULO ====================-->
+  <title>Dashboards | Hoverable Sidebar Menu</title>
 
-        <!--==================== ICONOS ====================-->
-      <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-     
-    </head>
-    <body>
-      <nav class="sidebar locked">
-        <div class="logo_items flex">
-          <span class="nav_image">
-            <img src="assets/img/logo.png" alt="logo_img" />
-          </span>
-          <span class="logo_name">Intza</span>
-          <i class="bx bx-lock-alt" id="lock-icon" title="Unlock Sidebar"></i>
-          <i class="bx bx-x" id="sidebar-close"></i>
-        </div>
-        <div class="menu_container">
-          <div class="menu_items">
-            <ul class="menu_item">
-              <div class="menu_title flex">
-                <span class="title">Dashboard</span>
-                <span class="line"></span>
-              </div>
-              <li class="item">
-                <a href="#" class="link flex">
-                  <i class="bx bx-home-alt"></i>
-                  <span>Resumen</span>
-                </a>
-              </li>
-              <li class="item">
-                <a href="#" class="link flex">
-                  <i class="bx bx-grid-alt"></i>
-                  <span>Todos los Proyectos</span>
-                </a>
-              </li>
-              </ul>
-              <ul class="menu_item">
-                <div class="menu_title flex">
-                  <span class="title">Editor</span>
-                  <span class="line"></span>
-                </div>
-                <li class="item">
-                  <a href="#" class="link flex">
-                    <i class="bx bxs-magic-wand"></i>
-                    <span>Construcción Mágica</span>
-                  </a>
-                </li>
-                <li class="item">
-                  <a href="#" class="link flex">
-                    <i class="bx bx-folder"></i>
-                    <span>Nuevos Proyectos</span>
-                  </a>
-                </li>
-                <li class="item">
-                  <a href="#" class="link flex">
-                    <i class="bx bx-cloud-upload"></i>
-                    <span>Subir Nuevo</span>
-                  </a>
-                </li>
-              </ul>
-              <ul class="menu_item">
-                <div class="menu_title flex">
-                  <span class="title">Configuración</span>
-                  <span class="line"></span>
-                </div>
-                <li class="item">
-                  <a href="#" class="link flex">
-                    <i class="bx bx-flag"></i>
-                    <span>Tablón de Anuncios</span>
-                  </a>
-                </li>
-                <li class="item">
-                  <a href="#" class="link flex">
-                    <i class="bx bx-award"></i>
-                    <span>Premio</span>
-                  </a>
-                </li>
-                <li class="item">
-                  <a href="#" class="link flex">
-                    <i class="bx bx-cog"></i>
-                    <span>Configuración</span>
-                  </a>
-                </li>
-            </ul>
+  <!--==================== ICONO DE PESTAÑA ====================-->
+  <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
+
+  <!--==================== ICONOS ====================-->
+  <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+  <nav class="sidebar locked">
+    <div class="logo_items flex">
+      <span class="nav_image">
+        <img src="assets/img/favicon.webp" alt="logo" />
+      </span>
+      <span class="logo_name">Intza</span>
+      <i class="bx bx-lock-alt" id="lock-icon" title="Unlock Sidebar"></i>
+      <i class="bx bx-x" id="sidebar-close"></i>
+    </div>
+    <div class="menu_container">
+      <div class="menu_items">
+        <ul class="menu_item">
+          <div class="menu_title flex">
+            <span class="title">Dashboard</span>
+            <span class="line"></span>
           </div>
-          <div class="sidebar_profile flex">
-            <span class="nav_image">
-              <img src="assets/img/chico.jpg" alt="logo_img" />
-            </span>
-            <div class="data_text">
-              <span class="name">David Oliva</span>
-              <span class="email">david@gmail.com</span>
+          <li class="item">
+            <a href="#" class="link flex">
+              <i class="bx bx-home-alt"></i>
+              <span>Resumen</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="link flex">
+              <i class="bx bx-grid-alt"></i>
+              <span>Todos los Proyectos</span>
+            </a>
+          </li>
+          </ul>
+          <ul class="menu_item">
+            <div class="menu_title flex">
+              <span class="title">Editor</span>
+              <span class="line"></span>
             </div>
-          </div>
-        </div>
-      </nav>
-      <nav class="navbar flex">
-        <i class="bx bx-menu" id="sidebar-open"></i>
-        <input type="text" placeholder="Search..." class="search_box" />
+            <li class="item">
+              <a href="#" class="link flex">
+                <i class="bx bxs-magic-wand"></i>
+                <span>Construcción Mágica</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="link flex">
+                <i class="bx bx-folder"></i>
+                <span>Nuevos Proyectos</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="link flex">
+                <i class="bx bx-cloud-upload"></i>
+                <span>Subir Nuevo</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="menu_item">
+            <div class="menu_title flex">
+              <span class="title">Configuración</span>
+              <span class="line"></span>
+            </div>
+            <li class="item">
+              <a href="#" class="link flex">
+                <i class="bx bx-flag"></i>
+                <span>Tablón de Anuncios</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="link flex">
+                <i class="bx bx-award"></i>
+                <span>Premio</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="#" class="link flex">
+                <i class="bx bx-cog"></i>
+                <span>Configuración</span>
+              </a>
+            </li>
+        </ul>
+      </div>
+      <div class="sidebar_profile flex">
         <span class="nav_image">
           <img src="assets/img/chico.jpg" alt="logo_img" />
         </span>
-      </nav>
-       <!--==================== script ====================-->
-      <script src="assets/js/script.js"></script>
-    </body>
-  </html>
+        <div class="data_text">
+          <span class="name">David Oliva</span>
+          <span class="email">david@gmail.com</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar flex">
+    <i class="bx bx-menu" id="sidebar-open"></i>
+    <input type="text" placeholder="Search..." class="search_box" />
+    <span class="nav_image">
+      <img src="assets/img/chico.jpg" alt="logo_img" />
+    </span>
+  </nav>
+  <!--==================== SCRIPT ====================-->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

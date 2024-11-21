@@ -1,113 +1,110 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
+<html lang="es">
+<head>
   <!--==================== METADATOS ====================-->
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <meta name="description" content="Dashboards">
-      <meta name="keywords" content="HTML-CSS-JS">
-      <meta name="author" content="Rocio Cuello">
-      
-      <!--==================== CSS ====================-->
-      <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Dashboards">
+  <meta name="keywords" content="HTML-CSS-JS">
+  <meta name="author" content="Rocio Cuello">
 
-      <!--==================== TITULO ====================-->
-      <title>Dashboards | Sidebar Menu</title>
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="assets/css/style.css">
 
-      <!--==================== ICONO DE PESTAÑA ====================-->
-      <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
+  <!--==================== TITULO ====================-->
+  <title>Dashboards | Sidebar Menu</title>
 
-    </head>
+  <!--==================== ICONO DE PESTAÑA ====================-->
+  <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
+</head>
+<body>
+  <div class="navigation">
+    <ul>
+      <li class="list active">
+        <b></b>
+        <b></b>
+        <a href="#">
+          <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+          <span class="title">Inicio</span>
+        </a>
+      </li>
+      <li class="list">
+        <b></b>
+        <b></b>
+        <a href="#">
+          <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+          <span class="title">Perfil</span>
+        </a>
+      </li>
+      <li class="list">
+        <b></b>
+        <b></b>
+        <a href="#">
+          <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+          <span class="title">Mensajes</span>
+        </a>
+      </li>
+      <li class="list">
+        <b></b>
+        <b></b>
+        <a href="#">
+          <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+          <span class="title">Ajustes</span>
+        </a>
+      </li>
+      <li class="list">
+        <b></b>
+        <b></b>
+        <a href="#">
+          <span class="icon"><ion-icon name="help-outline"></ion-icon></span>
+          <span class="title">Ayuda</span>
+        </a>
+      </li>
+      <li class="list">
+        <b></b>
+        <b></b>
+        <a href="#">
+          <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+          <span class="title">Contraseña</span>
+        </a>
+      </li>
+      <li class="list">
+        <b></b>
+        <b></b>
+        <a href="#">
+          <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+          <span class="title">Cerrar Sesión</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="toggle">
+    <ion-icon name="menu-outline" class="open"></ion-icon>
+    <ion-icon name="close-outline" class="close"></ion-icon>
+  </div>
+  <!--==================== SCRIPT ====================-->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script>
+  let menuToggle=document.querySelector('.toggle');
+  let navigation=document.querySelector('.navigation');
+  menuToggle.onclick=function(){
+    menuToggle.classList.toggle('active');
+    navigation.classList.toggle('active');
+  }
 
-  <body>
-    <div class="navigation">
-      <ul>
-        <li class="list active">
-          <b></b>
-          <b></b>
-          <a href="#">
-            <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-            <span class="title">Inicio</span>
-          </a>
-        </li>
-        <li class="list">
-          <b></b>
-          <b></b>
-          <a href="#">
-            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-            <span class="title">Perfil</span>
-          </a>
-        </li>
-        <li class="list">
-          <b></b>
-          <b></b>
-          <a href="#">
-            <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-            <span class="title">Mensajes</span>
-          </a>
-        </li>
-        <li class="list">
-          <b></b>
-          <b></b>
-          <a href="#">
-            <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
-            <span class="title">Ajustes</span>
-          </a>
-        </li>
-        <li class="list">
-          <b></b>
-          <b></b>
-          <a href="#">
-            <span class="icon"><ion-icon name="help-outline"></ion-icon></span>
-            <span class="title">Ayuda</span>
-          </a>
-        </li>
-        <li class="list">
-          <b></b>
-          <b></b>
-          <a href="#">
-            <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-            <span class="title">Contraseña</span>
-          </a>
-        </li>
-        <li class="list">
-          <b></b>
-          <b></b>
-          <a href="#">
-            <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
-            <span class="title">Cerrar Sesión</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="toggle">
-      <ion-icon name="menu-outline" class="open"></ion-icon>
-      <ion-icon name="close-outline" class="close"></ion-icon>
-    </div>
-       <!--==================== script ====================-->
-       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-       <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-       <script>
-        let menuToggle=document.querySelector('.toggle');
-        let navigation=document.querySelector('.navigation');
-        menuToggle.onclick=function(){
-          menuToggle.classList.toggle('active');
-          navigation.classList.toggle('active');
-        }
-
-        let list = document.querySelectorAll('.list');
-        
-        for (let i = 0; i < list.length; i++) {
-          list[i].onclick = function() {
-            let j=0;
-            while(j<list.length){
-              list[j++].className='list';
-          }
-           list[i].className='list active';
-        }
-        }
-      </script>
-      
-   </body>
+  let list = document.querySelectorAll('.list');
+  
+  for (let i = 0; i < list.length; i++) {
+    list[i].onclick = function() {
+      let j=0;
+      while(j<list.length){
+        list[j++].className='list';
+    }
+      list[i].className='list active';
+    }
+    }
+  </script>
+</body>
 </html>

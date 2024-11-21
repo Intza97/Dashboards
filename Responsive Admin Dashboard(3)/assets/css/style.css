@@ -142,7 +142,7 @@ nav .container{
   margin: 0 auto;
 }
 nav img.logo{
-  width: 7rem;
+  width: 3rem;
 }
 nav .search-bar{
   background: var(--color-light);

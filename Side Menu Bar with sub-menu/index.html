@@ -1,84 +1,84 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
+<html lang="es">
+<head>
   <!--==================== METADATOS ====================-->
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <meta name="description" content="Dashboards">
-      <meta name="keywords" content="HTML-CSS-JS">
-      <meta name="author" content="Rocio Cuello">
-      
-      <!--==================== CSS ====================-->
-      <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Dashboards">
+  <meta name="keywords" content="HTML-CSS-JS">
+  <meta name="author" content="Rocio Cuello">
 
-      <!--==================== TITULO ====================-->
-      <title>Dashboards | Sidebar Menu with sub-menu</title>
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="assets/css/style.css">
 
-      <!--==================== ICONO DE PESTAÑA ====================-->
-      <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
+  <!--==================== TITULO ====================-->
+  <title>Dashboards | Sidebar Menu with sub-menu</title>
 
-      <!--==================== ICONOS ====================-->
-      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-   </head>
-   <body>
-      <div class="btn">
-         <span class="fas fa-bars"></span>
-       </div>
-       <nav class="sidebar">
-         <div class="text">
-           Menú Lateral
-         </div>
-         <ul>
+  <!--==================== ICONO DE PESTAÑA ====================-->
+  <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
 
-            <li class="active"><a href="#">Dashboard</a></li>
-            <li>
-               <a href="#" class="feat-btn">Características
-               <span class="fas fa-caret-down first"></span>
-               </a>
-               <ul class="feat-show">
-                 <li><a href="#">Páginas</a></li>
-                 <li><a href="#">Elementos</a></li>
-               </ul>
-             </li>
-             <li>
-               <a href="#" class="serv-btn">Servicios
-               <span class="fas fa-caret-down second"></span>
-               </a>
-               <ul class="serv-show">
-                 <li><a href="#">Diseño de Apps</a></li>
-                 <li><a href="#">Diseño Web</a></li>
-               </ul>
-             </li>
-             <li><a href="#">Portafolio</a></li>
-             <li><a href="#">Resumen</a></li>
-             <li><a href="#">Atajos</a></li>
-             <li><a href="#">Comentarios</a></li>
-           </ul>
-         </nav>
-         <div class="content">
-           <div class="header">
-             Menú Lateral con submenú
-           </div>
-         </div>
-      <!--==================== script ====================-->
-      <script>
-         $('.btn').click(function(){
-           $(this).toggleClass("click");
-           $('.sidebar').toggleClass("show");
-         });
-           $('.feat-btn').click(function(){
-             $('nav ul .feat-show').toggleClass("show");
-             $('nav ul .first').toggleClass("rotate");
-           });
-           $('.serv-btn').click(function(){
-             $('nav ul .serv-show').toggleClass("show1");
-             $('nav ul .second').toggleClass("rotate");
-           });
-           $('nav ul li').click(function(){
-             $(this).addClass("active").siblings().removeClass("active");
-           });
-      </script>
-   </body>
+  <!--==================== ICONOS ====================-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <div class="btn">
+      <span class="fas fa-bars"></span>
+  </div>
+  <nav class="sidebar">
+    <div class="text">
+      Menú Lateral
+    </div>
+    <ul>
+
+      <li class="active"><a href="#">Dashboard</a></li>
+      <li>
+          <a href="#" class="feat-btn">Características
+          <span class="fas fa-caret-down first"></span>
+          </a>
+          <ul class="feat-show">
+            <li><a href="#">Páginas</a></li>
+            <li><a href="#">Elementos</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="serv-btn">Servicios
+          <span class="fas fa-caret-down second"></span>
+          </a>
+          <ul class="serv-show">
+            <li><a href="#">Diseño de Apps</a></li>
+            <li><a href="#">Diseño Web</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Portafolio</a></li>
+        <li><a href="#">Resumen</a></li>
+        <li><a href="#">Atajos</a></li>
+        <li><a href="#">Comentarios</a></li>
+      </ul>
+  </nav>
+  <div class="content">
+    <div class="header">
+      Menú Lateral con submenú
+    </div>
+  </div>
+  <!--==================== SCRIPT ====================-->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>
+    $('.btn').click(function(){
+      $(this).toggleClass("click");
+      $('.sidebar').toggleClass("show");
+    });
+      $('.feat-btn').click(function(){
+        $('nav ul .feat-show').toggleClass("show");
+        $('nav ul .first').toggleClass("rotate");
+      });
+      $('.serv-btn').click(function(){
+        $('nav ul .serv-show').toggleClass("show1");
+        $('nav ul .second').toggleClass("rotate");
+      });
+      $('nav ul li').click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+  </script>
+</body>
 </html>
